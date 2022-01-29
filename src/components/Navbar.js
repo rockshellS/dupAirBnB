@@ -1,11 +1,11 @@
 import React from "react"
-import airbnblogo from "../images/airbnb.png"
+
 
 function Navbar() {
     return (
        <nav>
            <img 
-                src={airbnblogo}
+                src={process.env.PUBLIC_URL + "/images/airbnb.png"} 
                 alt="Air B&B logo" className="nav-logo"/>
        </nav>
     )
